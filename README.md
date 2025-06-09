@@ -36,3 +36,35 @@ lib/
 │       ├── presentation/
 │       │   └── home_page.dart
 │       └── home_routes.dart
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+lib/
+│
+├── main.dart                 # Ponto de entrada do app
+│
+├── app/
+│   ├── router.dart           # Rotas nomeadas ou com GoRouter
+│   └── app.dart              # Widget principal (MaterialApp)
+│
+├── core/
+│   ├── constants/            # Constantes globais (strings, cores, assets)
+│   ├── utils/                # Funções utilitárias (ex: formatar datas)
+│   ├── widgets/              # Widgets reutilizáveis (botões, loaders, etc)
+│   └── services/             # Serviços comuns (ex: API, autenticação)
+│
+├── features/
+│   ├── auth/
+│   │   ├── data/             # Chamadas de API, models de resposta
+│   │   ├── domain/           # Models e regras de negócio
+│   │   ├── presentation/     # Telas, widgets e lógica de UI
+│   │   └── auth_routes.dart  # Rotas locais do módulo
+│   │
+│   └── tasks/                # Exemplo de outro módulo: tarefas
+│       ├── data/
+│       ├── domain/
+│       ├── presentation/
+│       └── tasks_routes.dart
+│
+└── shared/                   # Componentes compartilhados entre features
